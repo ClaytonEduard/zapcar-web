@@ -13,6 +13,13 @@ const meta = {
         changeValue: () => {},
         value: {
             defaultValue: ''
+        },
+        textAlign: {
+            options: ['left' , 'center'],
+            control: { type: 'select' }
+        },
+        hasError: {
+            defaultValue: false
         }
     },
     render: (props: any) => {
@@ -23,7 +30,8 @@ const meta = {
                 height: '90vh',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
+                padding: '2rem'
             }}>
                 {<Input {...props} />}
             </div>
@@ -37,13 +45,17 @@ type Story = StoryObj<typeof meta>;
 export const InputDefault: Story = {
     args: {
         value: '',
-        changeValue: () => {}
+        changeValue: () => {},
+        hasError: false,
+        textAlign: 'center'
     }
 };
 
 export const InputWithText: Story = {
     args: {
         value: 'Exemple',
-        changeValue: () => {}
+        changeValue: () => {},
+        hasError: false,
+        textAlign: 'center'
     }
 };
