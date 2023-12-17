@@ -1,9 +1,9 @@
-import IconLogo from "@/app/atoms/icon_logo";
+import IconPhone from "@/app/atoms/icon_phone";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
-  title: "Atoms/IconLogo",
-  component: IconLogo,
+  title: "Atoms/IconPhone",
+  component: IconPhone,
   parameters: {
     layout: "centered",
   },
@@ -23,18 +23,16 @@ const meta = {
           padding: "2rem",
         }}
       >
-        {<IconLogo {...props} />}
+        {<IconPhone {...props} />}
       </div>
     );
   },
-} satisfies Meta<typeof IconLogo>;
+} satisfies Meta<typeof IconPhone>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
-// Renderizar o Iconlogo no stories
-export const IconLog: Story = {
-  args: {
-    value: "/",
-  },
+// Renderizar o IconPhone no stories
+export const IconPhon: Story = {
+  args: {},
 };
