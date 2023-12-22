@@ -36,6 +36,6 @@ type Story = StoryObj<typeof meta>;
 export const IconMs: Story = {
   args: {
     width: 200,
-    onclick: () => alert("Ola"),
+    onClick: () => alert("Ola"),
   },
 };

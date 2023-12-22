@@ -34,5 +34,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 // Renderizar o IconPhone no stories
 export const IconPhon: Story = {
-  args: {},
+  args: {
+    onClick: () => {
+      alert("Olá");
+    },
+    width: 200,
+  },
 };
