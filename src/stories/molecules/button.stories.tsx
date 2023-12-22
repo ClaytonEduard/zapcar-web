@@ -1,9 +1,10 @@
+import ButtonMolec from "@/app/molecules/button";
 import InputTel from "@/app/molecules/input_tel";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
-  title: "Molecules/InputTel",
-  component: InputTel,
+  title: "Molecules/ButtonMolecl",
+  component: ButtonMolec,
   parameters: {
     layout: "centered",
   },
@@ -23,20 +24,21 @@ const meta = {
           padding: "2rem",
         }}
       >
-        {<InputTel {...props} />}
+        {<ButtonMolec {...props} />}
       </div>
     );
   },
-} satisfies Meta<typeof InputTel>;
+} satisfies Meta<typeof ButtonMolec>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
-// Renderizar o Back no stories
-export const InputTe: Story = {
+// Renderizar o ButtonMoleculas no stories
+export const ButtonMole: Story = {
   args: {
-    title: "Telefone:",
-    value: "",
-    event: () => {},
+    value: "Salvar",
+    event: () => {
+      alert("Olá");
+    },
   },
 };
