@@ -1,19 +1,13 @@
-import Image from "next/image";
-
-import imageFile from "../../../../public/search.svg";
-
-const icon = {
-  src: imageFile,
-  alt: "Pesquisar",
+type Props = {
+  width: number;
 };
 
-export default function IconSearch() {
-  //return  <Image src={icon.src} alt={icon.alt} width={100} height={100} />;
+export default function IconSearch({ width }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="16"
-      width="16"
+      height={width}
+      width={width}
       viewBox="0 0 512 512"
       fill="#FFFFFF"
     >

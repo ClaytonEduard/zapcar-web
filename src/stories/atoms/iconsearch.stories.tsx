@@ -34,5 +34,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 // Renderizar o IconMsn no stories
 export const IconSearc: Story = {
-  args: {},
+  args: {
+    width: 200,
+  },
 };
