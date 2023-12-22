@@ -10,13 +10,9 @@ const icon = {
 };
 
 type Props = {
-  value: string;
+  width: number;
 };
 
-export default function IconLogo({ value }: Props) {
-  return (
-    <Link href={value}>
-      <Image src={icon.src} alt={icon.alt} width={100} height={100} />,
-    </Link>
-  );
+export default function IconLogo({ width }: Props) {
+  return <Image src={icon.src} alt={icon.alt} width={width} height={width} />;
 }
