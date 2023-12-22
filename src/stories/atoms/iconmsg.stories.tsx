@@ -34,5 +34,8 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 // Renderizar o IconMsn no stories
 export const IconMs: Story = {
-  args: {},
+  args: {
+    width: 200,
+    onclick: () => alert("Ola"),
+  },
 };
