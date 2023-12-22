@@ -3,20 +3,18 @@ import styles from "./link.module.css";
 import Links from "next/link";
 type Props = {
   value: string;
-  link: string;
-  destiny: "_parent" | "_blank"; // meio de renderizar
+  onclick: () => void;
 };
 
-export default function Link({ value, link, destiny = "_parent" }: Props) {
+export default function Link({ value, onclick }: Props) {
   return (
     //* temos que pensar em um modo de como renderizar a pagina, para uma nova ou para a mesma
-    <Links
-      href={link}
+    <div
+      onClick={onclick}
       style={{
         textAlign: "center",
         textDecoration: "none",
       }}
-      target={destiny}
     >
       <label
         style={{
@@ -28,6 +26,6 @@ export default function Link({ value, link, destiny = "_parent" }: Props) {
       >
         {value}
       </label>
-    </Links>
+    </div>
   );
 }

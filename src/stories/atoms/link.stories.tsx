@@ -8,12 +8,7 @@ const meta = {
     layout: "centered",
   },
   tags: ["atoms"],
-  argTypes: {
-    destiny: {
-      options: ["_parent", "_blank"],
-      control: { type: "select" },
-    },
-  },
+  argTypes: {},
 
   render: (props: any) => {
     return (
@@ -40,8 +35,9 @@ type Story = StoryObj<typeof meta>;
 // Renderizar o link no stories
 export const LinkCad: Story = {
   args: {
-    value: "",
-    link: "",
-    destiny: "_parent",
+    value: "Já possuo cadastro",
+    onclick: () => {
+      alert("Olá");
+    },
   },
 };
