@@ -1,6 +1,5 @@
 import IconBack from "@/app/atoms/icon_back";
 import { Meta, StoryObj } from "@storybook/react";
-import imageFile from "../../../public/back.svg";
 
 const meta = {
   title: "Atoms/IconBack",
@@ -9,12 +8,7 @@ const meta = {
     layout: "centered",
   },
   tags: ["atoms"],
-  argTypes: {
-    destiny: {
-      options: ["_parent", "_blank"],
-      control: { type: "select" },
-    },
-  },
+  argTypes: {},
   render: (props: any) => {
     return (
       <div
@@ -41,7 +35,7 @@ type Story = StoryObj<typeof meta>;
 // Renderizar o IconBack no stories
 export const IconBac: Story = {
   args: {
-    value: "/",
-    destiny: "_parent",
+    width: 200,
+    onClick: () => alert("Ola"),
   },
 };

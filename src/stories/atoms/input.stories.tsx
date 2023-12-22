@@ -51,6 +51,7 @@ export const InputDefault: Story = {
     changeValue: () => {},
     hasError: false,
     textAlign: "center",
+    type: "tel",
   },
 };
 

@@ -1,3 +1,16 @@
+type Colors = {
+    primary: string,
+    secondary: string,
+    darkGray: string,
+    gray: string,
+    lightGray: string,
+    red: string,
+    darkBlue: string,
+    blue: string
+}
+
+export type Color = keyof Colors;
+
 export const theme = {
     colors: {
         primary: '#0F2944',

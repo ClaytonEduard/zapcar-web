@@ -1,22 +1,19 @@
-import Image from "next/image";
-
-import imageFile from "../../../../public/back.svg";
-import Link from "next/link";
-
-const icon = {
-  src: imageFile,
-  alt: "icon voltar",
-};
-
 type Props = {
-  value: string;
-  destiny: "_parent" | "_blank"; // meio de renderizar
+  onClick: () => void;
+  width: number;
 };
 
-export default function IconBack({ value, destiny }: Props) {
+export default function IconBack({ onClick, width }: Props) {
   return (
-    <Link href={value} target={destiny}>
-      <Image src={icon.src} alt={icon.alt} width={100} height={100} />;
-    </Link>
+    <div onClick={onClick} style={{ cursor: "pointer" }}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height={width}
+        width={width}
+        viewBox="0 0 320 512"
+      >
+        <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+      </svg>
+    </div>
   );
 }
