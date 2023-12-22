@@ -10,10 +10,10 @@ type Props = {
 
 export default function InputText({ title, event, value }: Props) {
   return (
-    <Container width={300} height={60} color="secondary">
-      <div style={{ width: 200 }}>
+    <Container width={350} height={60} color="secondary">
+      <div style={{ width: "100%" }}>
         <Label value={title} />
-        <Input value={value} changeValue={event} textAlign="left" type="text" />
+        <Input value={value} changeValue={event} type="text" />
       </div>
     </Container>
   );

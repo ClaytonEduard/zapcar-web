@@ -31,7 +31,7 @@ export default function Input({
         color,
         textTransform: "uppercase",
         textAlign,
-        width: "100%",
+        width: "90%",
         fontWeight: "600",
       }}
     />
