@@ -11,6 +11,7 @@ export default function Label({ value }: Props) {
         textAlign: "left",
         color: theme.colors.primary,
         fontWeight: "800",
+        textTransform: "uppercase",
       }}
     >
       {value}
