@@ -8,8 +8,6 @@ type Props = {
 
 export default function OrganisHeader({ title, backTo }: Props) {
   return (
-    <Container width={350} height={32} color="secondary">
       <Header title={title} backTo={backTo}></Header>
-    </Container>
   );
 }
