@@ -1,4 +1,4 @@
-import InputText from "@/app/molecules/input_text";
+import InputText from "@/app/molecules/input_Text";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

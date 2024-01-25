@@ -1,13 +1,13 @@
-import InputTel from "@/app/molecules/input_Tel";
+import OrganisHeader from "@/app/organisms/header";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
-  title: "Molecules/InputTel",
-  component: InputTel,
+  title: "Organisms/Header",
+  component: OrganisHeader,
   parameters: {
     layout: "centered",
   },
-  tags: ["molecules"],
+  tags: ["organisms"],
   argTypes: {},
   render: (props: any) => {
     return (
@@ -23,20 +23,21 @@ const meta = {
           padding: "2rem",
         }}
       >
-        {<InputTel {...props} />}
+        {<OrganisHeader {...props} />}
       </div>
     );
   },
-} satisfies Meta<typeof InputTel>;
+} satisfies Meta<typeof OrganisHeader>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 // Renderizar o Back no stories
-export const InputTe: Story = {
+export const OrganisHeade: Story = {
   args: {
-    title: "Telefone:",
-    value: "",
-    event: () => {},
+    title: "Cadastro",
+    backTo: () => {
+      alert("Voltar");
+    },
   },
 };
