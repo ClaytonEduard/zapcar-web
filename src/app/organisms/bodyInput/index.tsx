@@ -1,8 +1,6 @@
 import Container from "@/app/atoms/container";
-import InputTel from "@/app/molecules/input_Tel";
 import InputText from "@/app/molecules/input_Text";
 import ButtonMolec from "@/app/molecules/button";
-import InputSel from "@/app/molecules/input_sel";
 
 type Props = {
   titleModelo: string;
@@ -36,7 +34,7 @@ export default function BodyInput({
   eventBut2,
 }: Props) {
   return (
-    <Container color="secondary" height={300} width={200}>
+    <Container color="secondary" height={450} width={600}>
       <div>
         <InputText
           title={titleModelo}

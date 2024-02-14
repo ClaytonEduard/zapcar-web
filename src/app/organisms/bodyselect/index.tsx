@@ -34,7 +34,7 @@ export default function BodySelect({
   valueCidade,
 }: Props) {
   return (
-    <Container color="secondary" height={300} width={200}>
+    <Container color="secondary" height={450} width={600}>
       <div>
         <InputText title={titleNome} event={eventNome} value={valueNome} />
         <InputTel title={titleCel} event={eventCel} value={valueCel} />

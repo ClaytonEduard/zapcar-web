@@ -9,7 +9,7 @@ type Props = {
 
 export default function Header({ title, backTo }: Props) {
   return (
-    <Container color="secondary" width={800} height={32}>
+    <Container color="secondary" width={600} height={32}>
       <div
         style={{
           display: "flex",
